@@ -55,6 +55,7 @@ jobs:
   
   deploy:
     runs-on: ubuntu-latest
+    needs: run-ui-tests
     steps:
         - uses: actions/checkout@v3
         - uses: JorgeLNJunior/render-deploy@v1.4.4
